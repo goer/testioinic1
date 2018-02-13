@@ -7,9 +7,15 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { LoginPage } from '../pages/login/login';
+import { ListPage } from '../pages/list/list';
+import { DetailPage } from '../pages/detail/detail';
+import { SavePage } from '../pages/save/save';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { BeritaProvider } from '../providers/berita/berita';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +23,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    LoginPage, 
+    ListPage,
+    DetailPage,
+    SavePage
   ],
   imports: [
     BrowserModule,
@@ -29,12 +39,17 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    LoginPage,
+    ListPage,
+    DetailPage,
+    SavePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    BeritaProvider
   ]
 })
 export class AppModule {}
