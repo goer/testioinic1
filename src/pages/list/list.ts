@@ -18,11 +18,11 @@ import { DetailPage } from '../detail/detail';
 })
 export class ListPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public beritaProvider: BeritaProvider ) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public beritaProvider: BeritaProvider) {
   }
 
   detail(id) {
-    this.navCtrl.push(DetailPage, {id:id})
+    this.navCtrl.push(DetailPage, { id: id })
   }
 
   ionViewDidLoad() {
