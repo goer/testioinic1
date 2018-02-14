@@ -7,19 +7,15 @@
 </ion-header>
 
 
-<ion-content class="card-background-page">
-  <ion-card>
-    <button ion-item *ngFor="let berita of this.beritaProvider.listBerita() | async" (click)="detail(berita.id)" value="berita">
-      <img src="{{berita.photo}}">
-      <div class="card-title">{{ berita.title }}</div>
-    </button>
+<ion-content>
+
+  <ion-card *ngFor="let berita of this.beritaProvider.listBerita() | async" (click)="detail(berita.id)" value="berita">
+    <img src="{{ berita.photo }}" alt="picture">
+    <ion-card-content>
+      <ion-card-title>
+        {{ berita.title }}
+      </ion-card-title>
+    </ion-card-content>
   </ion-card>
-  <!-- <ion-list>
-    <button ion-item *ngFor="let berita of this.beritaProvider.listBerita() | async" (click)="detail(berita.id)" value="berita">
-      <ion-thumbnail item-start>
-        <img src="{{berita.photo}}">
-      </ion-thumbnail>
-      <p>{{ berita.title }}</p>
-    </button>
-  </ion-list> -->
+
 </ion-content>

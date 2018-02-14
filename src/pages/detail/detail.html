@@ -7,8 +7,12 @@
 </ion-header>
 
 
-<ion-content padding>
-  <img src={{this.dataBerita.photo}} alt="test">
-  <h2>{{this.dataBerita.title}}</h2>
-  <p>{{this.dataBerita.description}}</p>
+<ion-content>
+    <img src="{{this.dataBerita.photo}}" alt="picture" class="pic-content">
+    <ion-card-content>
+      <ion-card-title>
+        {{this.dataBerita.title}}
+      </ion-card-title>
+      <p>{{this.dataBerita.description}}</p>
+    </ion-card-content>
 </ion-content>

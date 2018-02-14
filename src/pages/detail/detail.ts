@@ -15,13 +15,10 @@ export class DetailPage {
     description: ''
   }
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public beritaProvider: BeritaProvider ) {
-    var id=navParams.get("id")
-    this.dataBerita=beritaProvider.detailBerita(id)
-
+  constructor(public navCtrl: NavController, public navParams: NavParams, public beritaProvider: BeritaProvider) {
+    var id = navParams.get("id")
+    this.dataBerita = beritaProvider.detailBerita(id)
   }
-
-
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DetailPage');

@@ -3,7 +3,6 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { BeritaProvider } from '../../providers/berita/berita';
 import { DetailPage } from '../detail/detail';
 
-
 /**
  * Generated class for the ListPage page.
  *
@@ -18,12 +17,7 @@ import { DetailPage } from '../detail/detail';
 })
 export class ListPage {
 
-  berita = [];
-
   constructor(public navCtrl: NavController, public navParams: NavParams, public beritaProvider: BeritaProvider) {
-    beritaProvider.listBerita().subscribe(berita => {
-      this.berita = berita;
-    })
   }
 
   detail(id) {
