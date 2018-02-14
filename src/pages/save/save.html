@@ -14,7 +14,24 @@
 
 
 <ion-content padding>
-  <ion-list>
+  <div class="input">
+    <ion-list>
+      <ion-item>
+        <ion-input type="text" [(ngModel)]="this.dataBerita.title" name="title" placeholder="Title" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="text" [(ngModel)]="this.dataBerita.photo" name="title" placeholder="Url-photo" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="text" [(ngModel)]="this.dataBerita.description" name="title" placeholder="Description" required></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <button ion-button color="secondary" full (click)="input()" class="input-btn">Submit</button>
+  </div>
+
+
+  <!-- <ion-list>
     <ion-label >Title</ion-label>
     <ion-input type="text" [(ngModel)]="this.dataBerita.title" placeholder="Title"></ion-input>
 
@@ -25,5 +42,5 @@
     <ion-input type="text" [(ngModel)]="this.dataBerita.description" placeholder="Description"></ion-input>
 
     <button ion-button color="secondary" full (click)="input()">Submit</button>
-  </ion-list>
+  </ion-list> -->
 </ion-content>

@@ -25,7 +25,7 @@ export class SavePage {
 
   input() {
     this.beritaProvider.saveBerita(this.dataBerita)
-  }
+  } 
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SavePage');
