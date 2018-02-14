@@ -1,3 +1,14 @@
 page-save {
+  .input {
+    ion-list {
+      border: solid 1px #383838;
+    }
 
+
+    .input-btn {
+      background: #f53d3d;
+      border-radius: 30px !important;
+      border: 1px solid #ffffff;
+    }
+  }
 }

@@ -6,22 +6,43 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>save</ion-title>
+  <ion-navbar color="dark">
+    <ion-title>Input</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <ion-label>Title</ion-label>
-  <ion-input type="text" [(ngModel)]="this.dataBerita.title"></ion-input>
+  <div class="input">
+    <ion-list>
+      <ion-item>
+        <ion-label color="dark">Title</ion-label>
+        <ion-textarea row="3" [(ngModel)]="this.dataBerita.title" name="title" placeholder="Title" required></ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-label color="dark">Phtoto</ion-label>
+        <ion-textarea row="3" [(ngModel)]="this.dataBerita.photo" name="title" placeholder="Url-photo" required></ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-label color="dark">Description</ion-label>
+        <ion-textarea row="3" [(ngModel)]="this.dataBerita.description" name="title" placeholder="Description" required></ion-textarea>
+      </ion-item>
+    </ion-list>
 
-  <ion-label>Photo</ion-label>
-  <ion-input type="text" [(ngModel)]="this.dataBerita.photo"></ion-input>
+    <button ion-button color="secondary" full (click)="input()" class="input-btn">Submit</button>
+  </div>
 
-  <ion-label>Description</ion-label>
-  <ion-input type="text" [(ngModel)]="this.dataBerita.description"></ion-input>
+  <!-- <ion-list>
+    <ion-label >Title</ion-label>
+    <ion-input type="text" [(ngModel)]="this.dataBerita.title" placeholder="Title"></ion-input>
 
-  <button (click)="save()"></button>
+    <ion-label >Photo</ion-label>
+    <ion-input type="text" [(ngModel)]="this.dataBerita.photo" placeholder="url photo"></ion-input>
+
+    <ion-label >Description</ion-label>
+    <ion-input type="text" [(ngModel)]="this.dataBerita.description" placeholder="Description"></ion-input>
+
+    <button ion-button color="secondary" full (click)="input()">Submit</button>
+  </ion-list> -->
 </ion-content>
