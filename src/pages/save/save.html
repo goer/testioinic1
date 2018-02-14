@@ -6,22 +6,24 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>save</ion-title>
+  <ion-navbar color="dark">
+    <ion-title>Input</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <ion-label>Title</ion-label>
-  <ion-input type="text" [(ngModel)]="this.dataBerita.title"></ion-input>
+  <ion-list>
+    <ion-label >Title</ion-label>
+    <ion-input type="text" [(ngModel)]="this.dataBerita.title" placeholder="Title"></ion-input>
 
-  <ion-label>Photo</ion-label>
-  <ion-input type="text" [(ngModel)]="this.dataBerita.photo"></ion-input>
+    <ion-label >Photo</ion-label>
+    <ion-input type="text" [(ngModel)]="this.dataBerita.photo" placeholder="url photo"></ion-input>
 
-  <ion-label>Description</ion-label>
-  <ion-input type="text" [(ngModel)]="this.dataBerita.description"></ion-input>
+    <ion-label >Description</ion-label>
+    <ion-input type="text" [(ngModel)]="this.dataBerita.description" placeholder="Description"></ion-input>
 
-  <button (click)="save()"></button>
+    <button ion-button color="secondary" full (click)="input()">Submit</button>
+  </ion-list>
 </ion-content>

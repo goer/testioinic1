@@ -20,13 +20,13 @@ export class BeritaProvider {
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius soluta aliquam aperiam omnis inventore sit debitis, quia, sapiente corporis ipsa perferendis fugit animi voluptatibus ut natus commodi voluptas repellendus consequuntur!"
     },
     {
-      id: 1,      
+      id: 1,
       title: "Title dua",
       photo: "https://cdn.pixabay.com/photo/2018/01/28/17/48/gallery-3114279_960_720.jpg",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius soluta aliquam aperiam omnis inventore sit debitis, quia, sapiente corporis ipsa perferendis fugit animi voluptatibus ut natus commodi voluptas repellendus consequuntur!"
     },
     {
-      id: 2,      
+      id: 2,
       title: "Title tiga",
       photo: "https://cdn.pixabay.com/photo/2015/04/03/20/52/milan-705880__180.jpg",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius soluta aliquam aperiam omnis inventore sit debitis, quia, sapiente corporis ipsa perferendis fugit animi voluptatibus ut natus commodi voluptas repellendus consequuntur!"

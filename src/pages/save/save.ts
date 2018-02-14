@@ -23,7 +23,7 @@ export class SavePage {
   constructor(public navCtrl: NavController, public navParams: NavParams, public beritaProvider: BeritaProvider) {
   }
 
-  save() {
+  input() {
     this.beritaProvider.saveBerita(this.dataBerita)
   }
 
