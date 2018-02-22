@@ -25,6 +25,7 @@ export class SavePage {
 
   input() {
     this.beritaProvider.saveBerita(this.dataBerita)
+    this.navCtrl.pop();
   } 
 
   ionViewDidLoad() {

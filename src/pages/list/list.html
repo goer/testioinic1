@@ -2,22 +2,22 @@
 
   <ion-navbar color="dark">
     <ion-title>list</ion-title>
+    
+    
+    <ion-buttons end>
+      <button ion-button icon-only (click)="input()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+    
   </ion-navbar>
 
 </ion-header>
 
 
-<<<<<<< HEAD
-<ion-content padding>
-  <ion-list>
-    <ion-item *ngFor="let berita of this.beritaProvider.listBerita() | async " (click)="detail(berita.id)">
-      <h3>{{ berita.title }}</h3>
-    </ion-item>
-  </ion-list>
-=======
 <ion-content>
 
-  <ion-card *ngFor="let berita of this.beritaProvider.listBerita() | async" (click)="detail(berita.id)" value="berita">
+  <ion-card *ngFor="let berita of this.beritaProvider.listBerita() | async" (click)="detail(berita)" value="berita">
     <img src="{{ berita.photo }}" alt="picture">
     <ion-card-content>
       <ion-card-title>
@@ -26,5 +26,4 @@
     </ion-card-content>
   </ion-card>
 
->>>>>>> c62b72fc4007fdb404cc5db763d4ee9f19b4bc75
 </ion-content>
